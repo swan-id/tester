@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="1.css">
+</head>
+<body>
+  <div class="login-container">
+    <form id="loginForm">
+      <h2>Login</h2>
+      <div class="input-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button type="submit">Login</button>
+      
+    </form>
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+          event.preventDefault();
+    
+          var username = document.getElementById("username").value;
+          var password = document.getElementById("password").value;
+    
+          if (username === "deswan" && password === "gaming") {
+            window.location.href = "https://genshin-impact.fandom.com/id/wiki/Hu_Tao#:~:text=Hu%20Tao%20(Bahasa%20Mandarin%3A%20%E8%83%A1%E6%A1%83,dan%20T%C3%A1o%20adalah%20nama%20aslinya.com";
+          } else {
+            alert("Username atau password salah. Silakan coba lagi.");
+          }
+        });
+      </script>
+  </div>
+</body>
+</html
